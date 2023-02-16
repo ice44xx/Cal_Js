@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src = './index.js' defer></script>
+    <link rel="icon" href="./img/js.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400&display=swap" rel="stylesheet">
+</head>
+<body data-theme = 'dark'>
+    <div class="container">
+        <div class="container-cal">
+            <div class="container_img">
+                <img src="./img/js.png" id = 'img_js' alt="">
+                <div class="theme_btn" >
+                    <input type="checkbox" id = 'darkmode-toggle' class="check_input">
+                    <label for="darkmode-toggle">
+                        <img src="./img/moon.png" alt="" class="moon">
+                        <img src="./img/sun.png" class="sun" alt="">
+                    </label class = 'label_checkbox'>
+                </div>
+            </div>
+            
+            <input type="text" id = 'input'>
+
+            <div id = 'keys'>
+                <button class = 'charKey' id = 'clear'>C</button>
+                <button class = 'charKey' data-value = ' ( '>(</button>
+                <button class = 'charKey' data-value = ' ) '>)</button>
+                <button class = 'charKey' data-value = ' / '>/</button>
+                <button class = 'charKey' data-value = '7'>7</button>
+                <button class = 'charKey' data-value = '8'>8</button>
+                <button class = 'charKey' data-value = '9'>9</button>
+                <button class = 'charKey' data-value = '*'>*</button>
+                <button class = 'charKey' data-value = '4'>4</button>
+                <button class = 'charKey' data-value = '5'>5</button>
+                <button class = 'charKey' data-value = '6'>6</button>
+                <button class = 'charKey' data-value = ' - '>-</button>
+                <button class = 'charKey' data-value = '1'>1</button>
+                <button class = 'charKey' data-value = '2'>2</button>
+                <button class = 'charKey' data-value = '3'>3</button>
+                <button class = 'charKey' data-value = ' + '>+</button>
+                <button class = 'charKey' data-value = '0'>0</button>
+                <button class = 'charKey' data-value = '.'>.</button>
+                <button class = 'charKey' data-value = '%'>mod</button>
+                <button id = 'equal'>=</button>
+            </div>
+
+            <div class="container-copy">
+                <button id = 'copy'>Copy</button>
+                <input type="text" id = 'result' disabled>
+            </div>
+        </div>
+        <footer>
+            <h2>Created for Nathan Sant Helena</h2>
+        </footer>
+    </div>
+</body>
+</html>
